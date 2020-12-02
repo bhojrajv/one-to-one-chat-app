@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhatsapClone</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chat_fragment">Chatsfragment</string>
+    <string name="group_fragment">Contactfragment</string>
+    <string name="contact_fragment">Groupfragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

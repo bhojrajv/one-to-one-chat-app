@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity">
+    <EditText
+        android:id="@+id/verifyphone"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Write your phone number here..."
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/verifycode"
+        android:layout_below="@+id/verifyphone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input"
+        android:hint="Write your verification code here..."
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="50dp">
+    </EditText>
+    <Button
+        android:id="@+id/sendcode"
+        android:layout_margin="10dp"
+        android:text="send verification code"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/verifycodebtn"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:text="send verification code"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/sendcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</RelativeLayout>

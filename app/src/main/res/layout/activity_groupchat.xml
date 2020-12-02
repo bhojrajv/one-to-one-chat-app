@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/rootlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupchatActivity">
+    <include android:id="@+id/groupChat"
+        layout="@layout/appbar_layout">
+    </include>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_below="@id/rootlayout"
+           android:id="@+id/parentRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="NotSibling">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/layoutview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            >
+              <ScrollView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/chatmsg"
+                      android:textAlignment="center"
+                      android:textColor="#000"
+                      android:textSize="18dp"
+                      android:background="#F3F3F0"
+                      android:padding="20dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                  </TextView>
+              </ScrollView>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/layoutview"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="bottom"
+                            android:textAlignment="center"
+                            android:background="@drawable/input"
+                            android:id="@+id/chattext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp">
+                        </EditText>
+                        <ImageButton
+                            android:id="@+id/sendmsg2"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/send_message"
+                            android:layout_below="@+id/chattext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageButton>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

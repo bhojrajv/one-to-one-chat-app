@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PrivateChat">
+    <include android:id="@+id/custom_tool"
+        layout="@layout/appbar_layout"></include>
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_below="@id/custom_tool"
+      android:background="@android:color/darker_gray"
+      android:id="@+id/privateChateRec"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+  android:layout_above="@+id/layouttext"
+     >
+  </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/layouttext"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/privatefilesbtn"
+            android:src="@drawable/send_files"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+        </ImageView>
+        <EditText
+            android:layout_toRightOf="@+id/privatefilesbtn"
+            android:layout_toLeftOf="@+id/privatesendmsg"
+            android:hint="send private message"
+            android:textAlignment="center"
+            android:id="@+id/privateChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </EditText>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/privatesendmsg"
+          android:layout_marginTop="10dp"
+            android:src="@drawable/send_message"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+        </ImageView>
+    </RelativeLayout>
+</RelativeLayout>
